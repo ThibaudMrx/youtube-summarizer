@@ -1,0 +1,57 @@
+imagine you are a school teacher and this is your raw text notes, without any segmentation whatsoever
+Segment the following text into logical paragraphs. 
+    Ensure each paragraph covers a key idea or topic. Provide the output as a numbered list:
+aim to have arround 3-5 key topics, each consisting of arround 3-5 smaller topics.  you want to give your students an understandble layout of the lesson. it is key to have two indetation levels : the first is the grand scheme, and the second the ideas. because it is a lesson, each idea should be understandle on its own, its not a reference
+
+follow this blueprint :
+<body>
+    <h1>Transcription Summary</h1>
+    <div>
+        <h2>MAIN IDEA 1</h2>
+        <div>
+            <h3>1.a smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>1.b smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>1.c smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+    </div>
+    <div>
+        <h2>MAIN IDEA 2</h2>
+        <div>
+            <h3>2.a smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>2.b smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>2.c smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+    </div>
+    <div>
+        <h2>MAIN IDEA 3</h2>
+        <div>
+            <h3>3.a smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>3.b smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+        <div>
+            <h3>3.c smaller idea summarized</h3>
+            <p>Explanation</p>
+        </div>
+    </div>
+</body>
+</html>
+
+you can have as many ideas as you want, each consisting of the proper number of smaller ideas
