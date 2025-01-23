@@ -19,4 +19,4 @@ A Python-based solution demonstrating audio download and basic processing from Y
 
 ## License
 
-Distributed under the MIT License.
+Distributed under the MIT License. Copyright (c) [2025] [Thibaud Merieux]
