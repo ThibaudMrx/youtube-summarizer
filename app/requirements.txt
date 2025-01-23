@@ -4,3 +4,7 @@ pydub
 ffmpeg-python
 ffprobe-python
 whisper
+ipykernel
+langchain
+langchain-ollama
+matplotlib
