@@ -23,11 +23,11 @@ Distributed under the MIT License. Copyright (c) 2025 - Thibaud Merieux
 
 
 
-## Example results
+# Example results
 ### Input video :
 http://www.youtube.com/watch?v=4FTIVJEBkNY
 
-Summary Extracted:
+### Summary Extracted:
 
  Part 1
     1.a Saint Laurent Island is located near Gambel and the Bering Sea, approximately 65 km from Russian coast.
@@ -57,5 +57,10 @@ Summary Extracted:
     7.a Mourmansk serves as Russia's gateway to the Arctic and its natural resources, with key industries including fishing, nuclear-powered icebreaker fleet, and potential hub for LNG exports to Europe and China.
     7.b The US is expanding the port of Nome to monitor Bering Strait approach and has relocated F-35 fighters to Fairbanks airbase and an anti-missile base at Delta Junction.
 
-
+### Next steps 
+- Integrating with mflow to extract performance metrics of different models (so far, Mistral runs OK on my machine, better than other available solutions and is more reliable onthe output format)
+- Creating a tree diagram as output
+- Creating the front webpage
+- Creating the docker image of the app
+- Running the app serverless witht he docker image and AWS ressources
     
