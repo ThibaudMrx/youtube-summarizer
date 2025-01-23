@@ -1,5 +1,3 @@
-# Project Title
-
 A Python-based solution demonstrating audio download and basic processing from YouTube. Includes progress logging and timing. Suitable for quick demos or stand-alone audio handling scripts.
 
 ## Features
@@ -16,8 +14,8 @@ A Python-based solution demonstrating audio download and basic processing from Y
 
 ## Usage
 
-1. Install dependencies.  
-2. Run the script with a valid URL.  
+1. Install dependencies by running `pip install -r app/requirements.txt`.
+2. Open the `app/ProofOfWorkNotebook.ipynb` and change the input video URL. Then run the script
 
 ## License
 
