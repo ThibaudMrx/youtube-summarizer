@@ -1,0 +1,97 @@
+/* style.css */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #f5f7fa;
+	color: #333;
+	padding: 2rem;
+}
+
+/* Center a container on the page */
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #2e2e2e;
+}
+
+.logo-container {
+	width: 1rem;
+}
+
+.youtube-logo {
+	width: 5%;
+}
+
+/* Input & button row */
+.input-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	text-align: center;
+	height: 100%;
+}
+
+#videoUrl {
+	width: 20rem;
+	flex: 9;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	border-radius: 4px;
+	margin-right: 0.5rem;
+}
+
+#videoUrl:focus {
+	transition: border-color 0.3s, box-shadow 0.3s;
+	outline: none;
+	border-color: #ff0000;
+}
+
+/* Button */
+button {
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 4px;
+	background: #ff0000;
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+	background: #9e0000;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+/* Result area */
+#result {
+	display: block;
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 4px;
+	white-space: pre-wrap;
+	line-height: 1.5;
+	font-family: 'Courier New', Courier, monospace;
+}
