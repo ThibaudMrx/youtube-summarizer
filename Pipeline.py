@@ -7,6 +7,7 @@ from typing import List
 
 from OllamaClient import OllamaClient
 
+
 class Pipeline:
     def __init__(self, youtube_url: str, ollama_client: OllamaClient, output_audio_path: str = "audio.mp3"):
         """
@@ -126,7 +127,7 @@ No extra commentary. Just the 3-7 key points.
 """
 
         for idx, chunk_text in enumerate(chunks, start=1):
-            self.logger.info(f"Processing chunk {idx}/{len(chunks)} for bullet point extraction, chunk text {chunk_text}")
+            self.logger.info(f"Processing chunk {idx}/{len(chunks)} for bullet point extraction")
             prompt = bullet_points_prompt_template.format(chunkText=chunk_text)
             try:
                 result = self.ollama_client.get_completion(prompt, model=model_name)
@@ -135,7 +136,6 @@ No extra commentary. Just the 3-7 key points.
                 bullet_points.extend(extracted_points)
                 self.logger.debug(f"Extracted bullet points for chunk {idx}: {extracted_points}")
             except Exception as e:
-                self.logger.debug(f"Prompt used for chunk {idx}: {prompt}")
                 self.logger.error(f"Failed to extract bullet points for chunk {idx}: {e}")
                 continue
 

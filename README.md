@@ -71,11 +71,18 @@ http://www.youtube.com/watch?v=4FTIVJEBkNY
 python3 -m venv venv
 pip install -r requirements.txt
 source venv/bin/activate
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-docker run -d -v --gpus=all ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama  --network youtube-summarizer-network
-docker built -t youtube-summarizer .
+curl -X POST http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model": "mistral", "prompt": "Hello! How are you?", "stream": false}'
+docker build -t youtube-summarizer .
+docker exec -it youtube-summarizer python3 testsOllamaHTTP.py
 docker exec -it ollama ollama run mistral
-uvicorn main:app --host 0.0.0.0 --port 8000
-docker run -d -p 8000:8000 -it --name youtube-summarizer --network youtube-summarizer-network youtube-summarizer
+docker network create youtube-summarizer-network
+docker run -p 11434:11434    --name ollama             --gpus=all --network youtube-summarizer-network ollama/ollama
+docker run -p 8000:8000      --name youtube-summarizer --gpus=all --network youtube-summarizer-network youtube-summarizer
 snap restart docker
+uvicorn main:app --host 0.0.0.0 --port 8000
+
+docker exec -it youtube-summarizer curl -I http://ollama:11434/
+
 ```

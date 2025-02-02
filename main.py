@@ -48,7 +48,7 @@ def summarize_video(req: VideoRequest):
         raise HTTPException(status_code=400, detail="YouTube URL is required.")
 
     # Initialize OllamaClient with desired configuration
-    ollama_client = OllamaClient(model="mistral", ollama_url="http://localhost:11434")
+    ollama_client = OllamaClient()
 
     # Initialize Pipeline with the YouTube URL and OllamaClient instance
     pipeline = Pipeline(

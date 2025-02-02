@@ -1,14 +1,13 @@
 # ollama.py
 
 import requests
-import logging
 from typing import Optional
 import json
+from CONFIG import *
 
-OLLAMA_CLIENT_URL = "http://localhost:11434"
 
 class OllamaClient:
-    def __init__(self, model: str = "mistral", ollama_url: str = OLLAMA_CLIENT_URL):
+    def __init__(self, model: str = OLLAMA_MODEL, ollama_url: str = OLLAMA_CLIENT_URL):
         """
         Initializes the OllamaClient with the specified model and server URL.
 
@@ -36,7 +35,7 @@ class OllamaClient:
             "stream": False,
         }
         endpoint = f"{self.ollama_url}/api/generate"
-        self.logger.debug(f"Sending POST request to {endpoint} with payload: {payload}")
+        self.logger.debug(f"Sending POST request to {endpoint} with payload: {str(payload)[:50]}")
 
         try:
             resp = requests.post(endpoint, json=payload)

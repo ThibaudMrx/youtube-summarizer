@@ -10,8 +10,8 @@ Usage:
 import requests
 import sys
 import json
+from CONFIG import *
 
-DEFAULT_OLLAMA_URL = "http://localhost:11434"
 DEFAULT_MODEL = "mistral"  # Change to the model you prefer, e.g. "llama2", "my-custom-model", etc.
 
 def ollama_complete(prompt, model, ollama_url):
@@ -40,7 +40,7 @@ def ollama_complete(prompt, model, ollama_url):
         sys.exit(1)
 
 
-def run_tests(ollama_url=DEFAULT_OLLAMA_URL, model=DEFAULT_MODEL):
+def run_tests(ollama_url=OLLAMA_CLIENT_URL, model=DEFAULT_MODEL):
     print(f"\n--- Testing Ollama at {ollama_url} with model '{model}' ---\n")
 
     # Test 1: Simple greeting prompt
