@@ -7,9 +7,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(funcName)s - %(message)s'
 )
 
-
-
-
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Get the current user's name.
