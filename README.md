@@ -54,12 +54,12 @@ http://www.youtube.com/watch?v=4FTIVJEBkNY
 **7.b** The US is expanding the port of Nome to monitor the Bering Strait approach and has relocated F-35 fighters to Fairbanks airbase and an anti-missile base at Delta Junction.
 
 ## Next Steps
-
+-  Use Youtube generated subtitles form a lighter load (downloading audio and extracting text with whisper is too heavy, it was just a playground idea to use some LLM libraries)
 -  Integrate with MLflow to extract and analyze performance metrics of various models.
 -  Implement a tree diagram for visualizing output.
 -  Develop the front-end webpage for user interaction.
--  Containerize the application by creating a Docker image.
--  Deploy the application serverlessly using the Docker image and AWS resources.
+-  [DONE] Containerize the application by creating a Docker image.
+-  [DONE] Deploy the application serverlessly using the Docker image and AWS resources.
 
 ## Helpers
 
