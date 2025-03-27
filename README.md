@@ -57,7 +57,7 @@ http://www.youtube.com/watch?v=4FTIVJEBkNY
 -  Use Youtube generated subtitles form a lighter load (downloading audio and extracting text with whisper is too heavy, it was just a playground idea to use some LLM libraries)
 -  Integrate with MLflow to extract and analyze performance metrics of various models.
 -  Implement a tree diagram for visualizing output.
--  Develop the front-end webpage for user interaction.
+-  [DRAFT DONE] Develop the front-end webpage for user interaction. FastAPI MVP exists
 -  [DONE] Containerize the application by creating a Docker image.
 -  [DONE] Deploy the application serverlessly using the Docker image and AWS resources.
 
