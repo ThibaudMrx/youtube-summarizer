@@ -1,21 +1,15 @@
 # YouTube Summarizer
 
-A Python-based solution demonstrating audio download and basic processing from YouTube. This tool is ideal for quick demos or stand-alone audio handling scripts. It downloads audio via YouTubeDL, outputs an MP3 file, and logs processing time.
-
+This FastAPI-powered app processes YouTube video URLs to extract and structure summarized content. It automates video analysis, generating organized sections (parts, subpoints) from transcribed data. I used this as a playground to learn some LLM libraries such as LangChain, Whisper, Ollama, Huggingface
 ## Features
 
+-  FastAPI web integration 
 -  Downloads audio via YouTubeDL
--  Outputs an MP3 file
--  Logs processing time
+-  Outputs the structure of the video as text
 
 ## Requirements
 
 -  Docker
-
-## License
-
-Distributed under the MIT License.  
-Copyright (c) 2025 - Thibaud Merieux
 
 ## Example Results
 
